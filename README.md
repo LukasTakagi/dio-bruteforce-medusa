@@ -7,6 +7,7 @@ Foi realizada uma varredura com Nmap no host alvo `192.168.56.4` para identifica
 
 ### Comando utilizado
 nmap -sV -Pn -p 21,80,139,445 192.168.56.4
+
 ![Resultado Nmap](images/enumeration/image.png)
 
 Serviços identificados:
