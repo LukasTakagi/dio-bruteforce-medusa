@@ -41,3 +41,11 @@ O Medusa identificou uma credencial válida para o serviço FTP:
 Após a identificação da credencial, o acesso foi validado manualmente com o cliente FTP do sistema, confirmando autenticação bem-sucedida no servidor.
 
 ![Resultado do Medusa e validação do login FTP](images/ftp/medusa-success.png)
+
+## Ataque de força bruta ao serviço SMB
+Foi realizado um teste de força bruta controlado contra o serviço SMB exposto nas portas `139` e `445` do host alvo `192.168.56.4`.
+
+### Comando utilizado
+```bash
+medusa -h 192.168.56.4 -U users.txt -P pass.txt -M smbnt -t 6
+```
