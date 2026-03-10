@@ -15,3 +15,9 @@ Serviços identificados:
 - 80/tcp HTTP
 - 139/tcp SMB
 - 445/tcp SMB
+
+### Preparação das wordlists
+Para direcionar os testes aos serviços em escopo e evitar tentativas excessivas no ambiente controlado, foram criadas wordlists reduzidas e customizadas com usuários e senhas comuns do laboratório.
+Os arquivos utilizados (`users.txt` e `pass.txt`) estão disponíveis na pasta `wordlists/`.
+
+![Criação das wordlists utilizadas no laboratório](images/preparation/wordlists-created.png)
