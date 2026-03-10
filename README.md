@@ -49,3 +49,14 @@ Foi realizado um teste de força bruta controlado contra o serviço SMB exposto 
 ```bash
 medusa -h 192.168.56.4 -U users.txt -P pass.txt -M smbnt -t 6
 ```
+### Resultado obtido
+O Medusa identificou uma credencial válida para o serviço SMB:
+
+- **Usuário:** `msfadmin`
+- **Senha:** `msfadmin`
+- 
+### Validação do acesso
+Após a identificação da credencial, o acesso foi validado com smbclient, listando os compartilhamentos disponíveis no servidor.
+
+![Credencial encontrada no SMB e validação com smbclient](images/smb/smb-medusa-validation.png)
+
